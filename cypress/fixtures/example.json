@@ -1,5 +1,16 @@
+[{
+  "name" : "fear and loathing in las vegas",
+  "type" : "movie",
+  "limit" : 3
+},
 {
-  "name": "albert king",
-  "type": "music",
-  "limit": 3
+  "name" : "albert king",
+  "type" : "music",
+  "limit" : 2
+},
+{
+  "name" : "the war on drugs",
+  "type" : "music",
+  "limit" : 4
 }
+]

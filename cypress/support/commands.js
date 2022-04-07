@@ -1,5 +1,10 @@
-Cypress.Commands.add("apiTastedive", (query) => {
+Cypress.Commands.add("APItasteDive", (query, type, limit) => {
   cy.request({
-    url: `https://tastedive.com/api/similar?q=${query.name}&limit=${query.limit}`,
+    url: "https://tastedive.com/api/similar",
+    qs: {
+      q: query,
+      type: type,
+      limit: limit,
+    },
   });
 });
