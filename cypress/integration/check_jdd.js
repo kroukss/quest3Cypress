@@ -8,6 +8,7 @@ describe('testdive API test', () => {
             expect(response.body.Similar.Info[0].Type).equal(data.type)
             for(let i=0;i<response.body.Similar.Results.length;i++)
             expect(response.body.Similar.Results[i].Type).equal(data.type)
+            expect(response.body.Similar.Results).lengthOf(data.limit)
         })        
     })
 })
