@@ -5,6 +5,8 @@ describe("tastedive APi", () => {
     for (let i = 0; i < data.length; i++) {
       cy.APItasteDive(data[i].name, data[i].type, data[i].limit).then(
         (response) => {
+          expect(response.status).equal(200);
+          expect(response.body.Similar.Info).not.empty;
           expect(response.body.Similar.Info[0].Name.toLowerCase()).equal(
             data[i].name
           );
